@@ -41,9 +41,9 @@
     <!-- Navbar --> 
     <!-- Form -->
     <main class="container">
-        <h1 class="display-1">Contact</h1>
+        <h1 class="display-1 my-2">Contact</h1>
         <hr>        
-        <form>
+        <form id="formSubmit">
             <div class="mb-3">
                 <label for="email" class="form-label">Email:</label>
                 <input
@@ -52,7 +52,8 @@
                     class="form-control"
                     placeholder="Write your email"
                     aria-describedby="emailHelp"
-                    required>
+                    required
+                    name="emailArea">
                 <div id="emailHelp" class="form-text">
                     We don't share your emai with nobody.
                 </div>
@@ -66,10 +67,37 @@
                     class="form-control"
                     placeholder="Write your password"
                     aria-describedby="pswrdHelp"
-                    required>
+                    required
+                    name="pswrdArea">
                 <div id="pswrdHelp" class="form-text">
                     Don't share your password with nobody.
                 </div>
+            </div>
+            <hr>
+            <div class="mb-3">
+                <label class="form-label">Terms & Conditions:</label>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Open to see the terms & conditions
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam <strong>soluta</strong> assumenda molestiae. Quia deserunt molestias dolore non asperiores debitis earum quos fuga, labore rem sint maiores ad tempora excepturi nemo <strong>itaque explicabo, dignissimos natus eius officia ipsum!</strong> Molestias voluptatem non temporibus, vel, iure porro omnis tenetur maxime vero harum, tempora numquam at labore <strong>veniam</strong> fuga magnam repudiandae quisquam a commodi nam dignissimos! Quo quam laborum, illum maiores velit tempore molestias nisi expedita error vel sequi sed itaque nemo quasi dolores!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <input 
+                    type="checkbox" 
+                    name="checkArea" 
+                    id="checkbox"
+                    class="form-check-input">
+                    <label for="checkbox" class="form-check-label">
+                        <small>Check to accept the terms & conditions</small>
+                    </label>
             </div>
             <hr>
             <div class="d-grid gap-2">
@@ -81,5 +109,8 @@
     <!-- Bootstrap Script JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <!-- Bootstrap Script JS -->
+    <!-- Script JS -->
+    <script src="app.js"></script>
+    <!-- Script JS -->
   </body>
 </html>
